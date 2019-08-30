@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="nav">
+        <div class="nav-center">
+            <h1><a href="#"><b>WeiJianCong</b></a></h1>
+            <ul class="nav-r">
+                <li><a href="#">首页</a></li>
+                <li><a href="#design">我的项目</a></li>
+                <li><a href="#costom">个人简介</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 第一部分，显示炫酷的图片，轮播图 -->
+    <div class="wrap blanner1">
+        <div class="border-box">
+            <p class="font current">HTML</p>
+            <p class="font right" data-index="2">CSS</p>
+            <p class="font " data-index="3">JavaScript</p>
+            <p class="font" data-index="4">jQuery</p>
+            <p class="font left" data-index="5">BootStrap</p>
+        </div>
+        <button id="left" class="btn left"><</button> 
+        <button id="right" class="btn right">></button>
+        <ul class="ul">
+            <li data-index="0"><span class="point"></span></li>
+            <li data-index="1"><span></span></li>
+            <li data-index="2"><span></span></li>
+            <li data-index="3"><span></span></li>
+            <li data-index="4"><span></span></li>
+        </ul>
+    </div>
+
+    <!-- 第二部分，我的项目 -->
+    <div id="design" class="wrap-gray design">
+        <h2 class="title">我 的 项 目</h2>
+        <ul>
+            <li class="ul">
+                <img src="img/城乡客运一体化.png" />
+                <div class="detail">
+                    <h3>城乡客运一体化系统</h3>
+                    <p>主要实现考核不同地区一体化发展水平，统计各地区的发展水平。<br/>
+                        该项目使用了Layui、Echarts和jQuery框架，并把Layui二次封装以简化代码，使用RequireJs管理js文件。
+                        用前后端分离的设计模式，Ajax传输数据。后台主要用Java和SpringBoot框架来写，
+                    </p>
+                </div>
+            </li>
+            <li class="ul">
+                <img src="img/本地软件管理.png" />
+                <div class="detail">
+                    <h3>本地软件管理系统</h3>
+                    <p>用于管理在电脑上的软件，防止因为太久不用而忘记的烦恼。 <br>
+                         使用python和pyQt框架制作，能够找到硬盘里所有的exe文件，也可以自己设定指定的文件地址,</p>
+                </div>
+            </li>
+            <li class="ul">
+                <img src="img/飞机大战.png" />
+                <div class="detail">
+                    <h3>飞机大战</h3>
+                    <p>使用java做的，采用多线程让地图、子弹和敌机动起来。并且敌机会朝主角发射子弹，可以拾取不同类型的子弹还可以放大招清屏</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- 第三部分，显示鼠标拖动切换的图片 -->
+    <div id="blanner-3d" class="wrap-white">
+        <h2 class="title">我 的 图 片</h2>
+        <div class="blanner2">
+            <img src="img/1.jpg" />
+            <img src="img/2.jpg" />
+            <img src="img/3.jpg" />
+            <img src="img/4.jpg" />
+            <img src="img/5.jpg" />
+        </div>
+    </div>
+
+    <!-- 我的简介 -->
+    <div id="costom" class="wrap-black">
+        <div class="contain">
+            <div class="header text-center">
+                <h2>我叫韦建聪，目标是成为一名优秀的前端工程师</h2>
+                <p>坚持，就一定会成功</p>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <div class="shudown">
+                        <div class="textHead">
+                            <h2>个人信息</h2>
+                        </div>
+                        <p>
+                            我的名字：韦建聪 <br/>
+                            英文名：WeiJianCong <br/>
+                            目前住在：广州  <br/>
+                            个人爱好：跑步  <br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="shudown">
+                        <div class="textHead">
+                            <h2>毕业学校</h2>
+                        </div>
+                        <p>
+                            海南热带海洋学院 <br/>
+                            专业：软件工程 <br/>
+                            个人技能：java、前端  <br/>
+                              <br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="shudown">
+                        <div class="textHead">
+                            <h2>联系方式</h2>
+                        </div>
+                        <p>
+                            邮箱：963339356@qq.com <br/>
+                                 <br/>
+                                  <br/>
+                                  <br/>
+                        </p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <footer class="text-center" style="display: hidden; padding:0; margin:0; font-size:14px;">...</footer>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/my.js"></script>
+</body>
+
+</html>

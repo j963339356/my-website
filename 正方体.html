@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        width: 200px;
+        height:200px;
+        margin: 200px auto;
+        transform-style:preserve-3d;
+        transform: rotateX(0deg) rotateY(0deg);
+        animation:rotate 10s infinite;  /*一直播放*/
+        animation-timing-function: linear;  /*动画速度不变*/
+    }
+    .box div{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        animation: all 0.2s;
+        color: white;
+        font-size: 4em;
+        text-align: center;
+        line-height: 3em;
+        opacity: 0.5;
+    }
+    /* 正面 */
+    .a1{
+        transform:translateZ(100px);
+        background-color: aqua;        
+    }
+    /* 背面 */
+    .a2{
+        transform:translateZ(-100px);
+        background-color: blueviolet;
+    }
+    /* 右面 */
+    .a3{
+        transform:rotateY(90deg) translateZ(100px);
+        background-color: black;
+    }
+    /* 左面 */
+    .a4{
+        transform: rotateY(-90deg) translateZ(100px);
+        background-color: blue;
+    }
+    /* 上面 */
+    .a5{
+        transform:rotateX(90deg) translateZ(100px);
+        background-color: rgb(255, 0, 221);
+    }
+    /* 下面 */
+    .a6{
+        transform:rotateX(-90deg) translateZ(100px);
+        background-color: rgb(238, 255, 0);
+    }
+    @keyframes rotate{
+        from{transform: rotateX(0deg) rotateY(0deg);}
+        to{transform: rotateX(360deg) rotateY(360deg);}
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="a1">1</div>
+        <div class="a2">2</div>
+        <div class="a3">3</div>
+        <div class="a4">4</div>
+        <div class="a5">5</div>
+        <div class="a6">6</div>
+    </div>
+</body>
+</html>
